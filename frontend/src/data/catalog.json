@@ -1,0 +1,475 @@
+{
+ "categories": [
+  {
+   "slug": "whey-protein",
+   "name": "Whey Protein",
+   "tagline": "Lean muscle fuel",
+   "sortOrder": 1
+  },
+  {
+   "slug": "mass-gainer",
+   "name": "Mass Gainers",
+   "tagline": "Serious size support",
+   "sortOrder": 2
+  },
+  {
+   "slug": "creatine",
+   "name": "Creatine",
+   "tagline": "Strength staple",
+   "sortOrder": 3
+  },
+  {
+   "slug": "pre-workout",
+   "name": "Pre-Workout",
+   "tagline": "Train harder",
+   "sortOrder": 4
+  },
+  {
+   "slug": "amino-bcaa-eaa",
+   "name": "BCAA & EAA",
+   "tagline": "Recovery aminos",
+   "sortOrder": 5
+  },
+  {
+   "slug": "vitamins-health",
+   "name": "Vitamins & Health",
+   "tagline": "Daily wellness",
+   "sortOrder": 6
+  },
+  {
+   "slug": "accessories",
+   "name": "Gym Accessories",
+   "tagline": "Shakers & gear",
+   "sortOrder": 7
+  }
+ ],
+ "products": [
+  {
+   "slug": "premium-whey-rich-chocolate",
+   "name": "Premium Whey Protein",
+   "category": "whey-protein",
+   "tagline": "Rich Chocolate \u00b7 1 kg",
+   "description": "RAGEFORGE Premium Whey in Rich Chocolate. Built for muscle growth, faster recovery and improved performance. Figures below come from the pack artwork and must be verified against the final label.",
+   "sizes": [
+    {
+     "label": "1 kg",
+     "price": 2499,
+     "mrp": 2999
+    }
+   ],
+   "flavours": [
+    "Rich Chocolate"
+   ],
+   "bestseller": true,
+   "featured": true,
+   "accent": "#FF3038",
+   "badge": "Flagship",
+   "imageKey": "whey-rich-chocolate",
+   "facts": [
+    "Protein per serving: 24 g",
+    "BCAAs: 5.5 g",
+    "Glutamine: 4 g",
+    "Added sugar: 0",
+    "Net weight: 1 kg",
+    "Flavour: Rich Chocolate"
+   ],
+   "id": 1
+  },
+  {
+   "slug": "whey-protein-cookies-cream",
+   "name": "Premium Whey Protein",
+   "category": "whey-protein",
+   "tagline": "Cookies & Cream",
+   "description": "Second whey listing to show variants. Sample listing - confirm composition on the final pack label before launch.",
+   "sizes": [
+    {
+     "label": "1 kg",
+     "price": 2499,
+     "mrp": 2999
+    },
+    {
+     "label": "2 kg",
+     "price": 4699,
+     "mrp": 5599
+    }
+   ],
+   "flavours": [
+    "Cookies & Cream",
+    "Cafe Mocha"
+   ],
+   "bestseller": true,
+   "featured": false,
+   "accent": "#d9d9de",
+   "badge": "Sample",
+   "imageKey": "",
+   "facts": [],
+   "id": 2
+  },
+  {
+   "slug": "whey-isolate",
+   "name": "Whey Isolate",
+   "category": "whey-protein",
+   "tagline": "Cleaner, faster whey",
+   "description": "Isolate-grade listing for lean and low-carb goals. Sample listing - confirm composition on the final pack label before launch.",
+   "sizes": [
+    {
+     "label": "1 kg",
+     "price": 3299,
+     "mrp": 3899
+    },
+    {
+     "label": "2 kg",
+     "price": 6199,
+     "mrp": 7299
+    }
+   ],
+   "flavours": [
+    "Unflavoured",
+    "Vanilla"
+   ],
+   "bestseller": false,
+   "featured": true,
+   "accent": "#8ab4ff",
+   "badge": "Sample",
+   "imageKey": "",
+   "facts": [],
+   "id": 3
+  },
+  {
+   "slug": "mass-gainer-xl",
+   "name": "Mass Gainer XL",
+   "category": "mass-gainer",
+   "tagline": "Calories for hard gainers",
+   "description": "High-calorie gainer listing. Sample listing - confirm composition on the final pack label before launch.",
+   "sizes": [
+    {
+     "label": "3 kg",
+     "price": 2899,
+     "mrp": 3399
+    },
+    {
+     "label": "5 kg",
+     "price": 4499,
+     "mrp": 5199
+    }
+   ],
+   "flavours": [
+    "Chocolate",
+    "Banana"
+   ],
+   "bestseller": true,
+   "featured": false,
+   "accent": "#ffb703",
+   "badge": "Sample",
+   "imageKey": "",
+   "facts": [],
+   "id": 4
+  },
+  {
+   "slug": "lean-gainer",
+   "name": "Lean Gainer",
+   "category": "mass-gainer",
+   "tagline": "Clean bulk option",
+   "description": "A lighter gainer listing for clean bulking. Sample listing - confirm composition on the final pack label before launch.",
+   "sizes": [
+    {
+     "label": "2 kg",
+     "price": 2299,
+     "mrp": 2699
+    }
+   ],
+   "flavours": [
+    "Chocolate"
+   ],
+   "bestseller": false,
+   "featured": false,
+   "accent": "#ff8a4c",
+   "badge": "Sample",
+   "imageKey": "",
+   "facts": [],
+   "id": 5
+  },
+  {
+   "slug": "creatine-monohydrate",
+   "name": "Creatine Monohydrate",
+   "category": "creatine",
+   "tagline": "Unflavoured, micronised",
+   "description": "A simple creatine tub. Sample listing - confirm composition on the final pack label before launch.",
+   "sizes": [
+    {
+     "label": "250 g",
+     "price": 1199,
+     "mrp": 1499
+    },
+    {
+     "label": "500 g",
+     "price": 1999,
+     "mrp": 2499
+    }
+   ],
+   "flavours": [
+    "Unflavoured"
+   ],
+   "bestseller": true,
+   "featured": true,
+   "accent": "#f1f1f4",
+   "badge": "Best seller",
+   "imageKey": "",
+   "facts": [],
+   "id": 6
+  },
+  {
+   "slug": "creatine-gummies",
+   "name": "Creatine Gummies",
+   "category": "creatine",
+   "tagline": "Chewable format",
+   "description": "Chewable creatine for people who dislike powders. Sample listing - confirm composition on the final pack label before launch.",
+   "sizes": [
+    {
+     "label": "60 pcs",
+     "price": 1499,
+     "mrp": 1799
+    }
+   ],
+   "flavours": [
+    "Mixed Berry"
+   ],
+   "bestseller": false,
+   "featured": false,
+   "accent": "#c77dff",
+   "badge": "Sample",
+   "imageKey": "",
+   "facts": [],
+   "id": 7
+  },
+  {
+   "slug": "pre-workout-inferno",
+   "name": "Pre-Workout Inferno",
+   "category": "pre-workout",
+   "tagline": "Pre-training formula",
+   "description": "Pre-workout powder listing. May contain caffeine - check the final label. Sample listing - confirm composition on the final pack label before launch.",
+   "sizes": [
+    {
+     "label": "300 g",
+     "price": 1799,
+     "mrp": 2199
+    }
+   ],
+   "flavours": [
+    "Fruit Punch",
+    "Blue Raspberry"
+   ],
+   "bestseller": true,
+   "featured": false,
+   "accent": "#ff3038",
+   "badge": "Sample",
+   "imageKey": "",
+   "facts": [],
+   "id": 8
+  },
+  {
+   "slug": "pre-workout-stim-free",
+   "name": "Pre-Workout Stim-Free",
+   "category": "pre-workout",
+   "tagline": "No caffeine",
+   "description": "Stimulant-free pre-workout listing. Sample listing - confirm composition on the final pack label before launch.",
+   "sizes": [
+    {
+     "label": "300 g",
+     "price": 1899,
+     "mrp": 2299
+    }
+   ],
+   "flavours": [
+    "Lemon Lime"
+   ],
+   "bestseller": false,
+   "featured": false,
+   "accent": "#5eead4",
+   "badge": "Sample",
+   "imageKey": "",
+   "facts": [],
+   "id": 9
+  },
+  {
+   "slug": "bcaa-recover",
+   "name": "BCAA Recover",
+   "category": "amino-bcaa-eaa",
+   "tagline": "Intra-workout aminos",
+   "description": "BCAA powder listing. Sample listing - confirm composition on the final pack label before launch.",
+   "sizes": [
+    {
+     "label": "250 g",
+     "price": 1299,
+     "mrp": 1599
+    },
+    {
+     "label": "450 g",
+     "price": 2099,
+     "mrp": 2499
+    }
+   ],
+   "flavours": [
+    "Watermelon",
+    "Orange"
+   ],
+   "bestseller": false,
+   "featured": true,
+   "accent": "#34d399",
+   "badge": "Sample",
+   "imageKey": "",
+   "facts": [],
+   "id": 10
+  },
+  {
+   "slug": "eaa-complete",
+   "name": "EAA Complete",
+   "category": "amino-bcaa-eaa",
+   "tagline": "All nine essentials",
+   "description": "EAA powder listing. Sample listing - confirm composition on the final pack label before launch.",
+   "sizes": [
+    {
+     "label": "300 g",
+     "price": 1699,
+     "mrp": 2099
+    }
+   ],
+   "flavours": [
+    "Mango",
+    "Green Apple"
+   ],
+   "bestseller": true,
+   "featured": false,
+   "accent": "#a3e635",
+   "badge": "Sample",
+   "imageKey": "",
+   "facts": [],
+   "id": 11
+  },
+  {
+   "slug": "daily-multivitamin",
+   "name": "Daily Multivitamin",
+   "category": "vitamins-health",
+   "tagline": "Everyday gap filler",
+   "description": "Multivitamin tablet listing. Sample listing - confirm composition on the final pack label before launch.",
+   "sizes": [
+    {
+     "label": "60 tabs",
+     "price": 699,
+     "mrp": 899
+    },
+    {
+     "label": "120 tabs",
+     "price": 1199,
+     "mrp": 1499
+    }
+   ],
+   "flavours": [
+    "Tablets"
+   ],
+   "bestseller": false,
+   "featured": false,
+   "accent": "#fbbf24",
+   "badge": "Sample",
+   "imageKey": "",
+   "facts": [],
+   "id": 12
+  },
+  {
+   "slug": "omega-3-fish-oil",
+   "name": "Omega-3 Fish Oil",
+   "category": "vitamins-health",
+   "tagline": "Softgels",
+   "description": "Fish oil softgel listing. Sample listing - confirm composition on the final pack label before launch.",
+   "sizes": [
+    {
+     "label": "90 caps",
+     "price": 899,
+     "mrp": 1199
+    }
+   ],
+   "flavours": [
+    "Softgels"
+   ],
+   "bestseller": true,
+   "featured": false,
+   "accent": "#38bdf8",
+   "badge": "Sample",
+   "imageKey": "",
+   "facts": [],
+   "id": 13
+  },
+  {
+   "slug": "forge-shaker",
+   "name": "Forge Shaker 700 ml",
+   "category": "accessories",
+   "tagline": "Leak-proof shaker",
+   "description": "Gym shaker in black and crimson.",
+   "sizes": [
+    {
+     "label": "700 ml",
+     "price": 399,
+     "mrp": 499
+    }
+   ],
+   "flavours": [
+    "Black/Red"
+   ],
+   "bestseller": true,
+   "featured": false,
+   "accent": "#ff3038",
+   "badge": "Gear",
+   "imageKey": "",
+   "facts": [],
+   "id": 14
+  },
+  {
+   "slug": "lifting-straps",
+   "name": "Lifting Straps",
+   "category": "accessories",
+   "tagline": "Grip support",
+   "description": "Cotton lifting straps.",
+   "sizes": [
+    {
+     "label": "Pair",
+     "price": 499,
+     "mrp": 649
+    }
+   ],
+   "flavours": [
+    "Black"
+   ],
+   "bestseller": false,
+   "featured": false,
+   "accent": "#9ca3af",
+   "badge": "Gear",
+   "imageKey": "",
+   "facts": [],
+   "id": 15
+  },
+  {
+   "slug": "gym-towel",
+   "name": "Forge Gym Towel",
+   "category": "accessories",
+   "tagline": "Quick-dry towel",
+   "description": "Microfibre gym towel.",
+   "sizes": [
+    {
+     "label": "Standard",
+     "price": 349,
+     "mrp": 449
+    }
+   ],
+   "flavours": [
+    "Black/Red"
+   ],
+   "bestseller": false,
+   "featured": false,
+   "accent": "#ef4444",
+   "badge": "Gear",
+   "imageKey": "",
+   "facts": [],
+   "id": 16
+  }
+ ]
+}
