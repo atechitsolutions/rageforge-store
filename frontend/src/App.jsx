@@ -10,11 +10,19 @@ import Product from "./pages/Product.jsx";
 import Wishlist from "./pages/Wishlist.jsx";
 import Checkout from "./pages/Checkout.jsx";
 import Order from "./pages/Order.jsx";
+import Distributor from "./pages/Distributor.jsx";
+import VerifyProduct from "./pages/VerifyProduct.jsx";
 
 export default function App() {
   const { toast } = useStore();
-  const { pathname } = useLocation();
-  useEffect(() => { window.scrollTo({ top: 0 }); }, [pathname]);
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (hash) {
+      requestAnimationFrame(() => document.getElementById(hash.slice(1))?.scrollIntoView());
+      return;
+    }
+    window.scrollTo({ top: 0 });
+  }, [pathname, hash]);
   return (
     <>
       <a className="skip" href="#main">Skip to content</a>
@@ -27,6 +35,8 @@ export default function App() {
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/order/:id" element={<Order />} />
+          <Route path="/distributor" element={<Distributor />} />
+          <Route path="/verify-product" element={<VerifyProduct />} />
           <Route path="*" element={<div className="wrap page"><h1 className="h1">404</h1><p>That page doesn't exist.</p></div>} />
         </Routes>
       </main>

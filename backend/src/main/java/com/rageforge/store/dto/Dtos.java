@@ -30,4 +30,19 @@ public final class Dtos {
     public record OrderLineDto(Long productId, String name, String size, String flavour, int price, int qty) {}
     public record OrderResponse(String id, String status, String customerName, int subtotal, int discount,
                                 int shipping, int total, List<OrderLineDto> items) {}
+
+    public record DistributorApplicationRequest(
+            @NotBlank @Size(min = 2, max = 160) String businessName,
+            @NotBlank @Size(min = 2, max = 120) String contactName,
+            @NotBlank @Email @Size(max = 160) String email,
+            @Pattern(regexp = "^[6-9]\\d{9}$", message = "must be a 10-digit Indian mobile number") String phone,
+            @NotBlank @Size(max = 80) String businessType,
+            @NotBlank @Size(max = 80) String city,
+            @NotBlank @Size(max = 80) String state,
+            @Pattern(regexp = "^\\d{6}$", message = "must be a 6-digit pincode") String pincode,
+            @Size(max = 300) String productInterest,
+            @Size(max = 2000) String message,
+            @AssertTrue(message = "consent is required") boolean consent) {}
+
+    public record DistributorApplicationResponse(String applicationId, String status, String contactName) {}
 }

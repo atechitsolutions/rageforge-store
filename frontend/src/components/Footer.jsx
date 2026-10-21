@@ -2,22 +2,38 @@ import { Link } from "react-router-dom";
 import { useStore } from "../store.jsx";
 
 export default function Footer() {
-  const { catalog, notify } = useStore();
+  const { catalog } = useStore();
   return (
-    <footer className="ftr">
+    <footer className="ftr" id="contact">
       <div className="wrap ftr-grid">
-        <div>
-          <img className="ftr-mark" src="/brand/wordmark.webp" alt="RAGEFORGE Performance Nutrition" loading="lazy" />
-          <p>Fuel your next level. Strength, focus, recovery, everyday.</p>
-          <form className="news" onSubmit={(e) => { e.preventDefault(); notify("Thanks - you're on the list (demo)"); e.target.reset(); }}>
-            <input type="email" required placeholder="Email for drops & offers" aria-label="Email" /><button className="btn sm">Join</button>
-          </form>
+        <div className="ftr-brand">
+          <img className="ftr-mark" src="rageforgelogo.jpeg" alt="RAGEFORGE Performance Nutrition" loading="lazy" />
+          <p>Performance nutrition engineered for athletes who train with purpose: strength, focus, recovery, every day.</p>
+          <div className="social-row" aria-label="RageForge community channels"><span aria-label="Instagram coming soon">◎</span><span aria-label="Facebook coming soon">f</span><span aria-label="YouTube coming soon">▶</span></div>
         </div>
-        <div><h4>Shop</h4>{catalog.categories.map((c) => <Link key={c.slug} to={`/shop?category=${c.slug}`}>{c.name}</Link>)}</div>
-        <div><h4>Help</h4><Link to="/shop">All products</Link><Link to="/wishlist">Wishlist</Link><Link to="/checkout">Checkout</Link><a href="#top">Back to top ↑</a></div>
-        <div><h4>Notes</h4><p className="fine">This is a demo storefront. Prices, offers and catalogue entries other than the flagship whey are sample data. No real payment is taken. Supplement claims must be verified against final labels before launch.</p></div>
+        <div className="ftr-links"><h4>Quick links</h4><Link to="/">Home</Link><Link to="/shop">Shop</Link><Link to="/#about">About us</Link><Link to="/verify-product">Verify product</Link><Link to="/distributor">Distributor</Link></div>
+        <div className="ftr-links"><h4>Categories</h4>{catalog.categories.map((c) => <Link key={c.slug} to={`/shop?category=${c.slug}`}>{c.name}</Link>)}</div>
+        <div className="ftr-contact">
+          <h4>Contact us</h4>
+
+          <a className="contact-row" href="mailto:rageforgenutrition@gmail.com">
+            <span>✉</span> rageforgenutrition@gmail.com
+          </a>
+
+          <a className="contact-row" href="tel:+917055372982">
+            <span>☎</span> +91 7055372982
+          </a>
+
+          <address className="contact-row contact-address">
+            <span>⌖</span>
+            <span>
+
+              India
+            </span>
+          </address>
+        </div>
       </div>
-      <div className="wrap ftr-base">© 2026 RAGEFORGE Performance Nutrition · Demo build</div>
+      <div className="wrap ftr-base"><span>© 2026 RAGEFORGE Performance Nutrition</span><span>Built for your next level · Demo build</span></div>
     </footer>
   );
 }

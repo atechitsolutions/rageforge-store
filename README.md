@@ -28,6 +28,7 @@ If the backend is not running, the site still works from the bundled catalogue a
 - `GET /api/products?q=&category=&best=true&maxPrice=&sort=featured|low|high|name`
 - `GET /api/products/{slug}`
 - `POST /api/orders` - prices are re-read from MySQL on the server; coupon `RAGE10` = 10% off; delivery free above 999 else 79 (sample rules)
+- `POST /api/distributor-applications` - records a distributor enquiry after validating the contact and business details
 
 ## 3D / ThreeUI (free MIT package `@designcodeio/threeui` 1.2.0)
 Used: `StructureFlowCollection` (topology-field hero), `LaserCollection` (offer banner), `SemanticBloom` (brand wordmark).

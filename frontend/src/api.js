@@ -40,3 +40,20 @@ export async function placeOrder(payload) {
     return order;
   }
 }
+
+export async function submitDistributorApplication(payload) {
+  try {
+    const application = await call("/distributor-applications", { method: "POST", body: JSON.stringify(payload) });
+    return { ...application, saved: "server" };
+  } catch {
+    const applications = JSON.parse(localStorage.getItem("rf_distributor_applications") || "[]");
+    const application = {
+      applicationId: "DA-" + Date.now().toString(36).toUpperCase(),
+      status: "RECEIVED",
+      contactName: payload.contactName,
+      saved: "device",
+    };
+    localStorage.setItem("rf_distributor_applications", JSON.stringify([...applications, { ...payload, ...application, createdAt: new Date().toISOString() }]));
+    return application;
+  }
+}

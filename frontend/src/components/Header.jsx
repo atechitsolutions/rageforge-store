@@ -3,7 +3,7 @@ import { Link, NavLink, useNavigate, useLocation } from "react-router-dom";
 import { useStore } from "../store.jsx";
 
 export default function Header() {
-  const { catalog, totals, wish, setCartOpen } = useStore();
+  const { totals, wish, setCartOpen } = useStore();
   const [open, setOpen] = useState(false);
   const [q, setQ] = useState("");
   const [scrolled, setScrolled] = useState(false);
@@ -17,14 +17,18 @@ export default function Header() {
 
   return (
     <header className={"hdr" + (scrolled ? " scrolled" : "")}>
-      <div className="topbar">Demo store · Use code <b>RAGE10</b> for 10% off · Free delivery above ₹999</div>
+      <div className="topbar">Demo store · Use code <b>RAGE10</b> for 10% off · Free delivery above ₹5000</div>
       <div className="hdr-row wrap">
         <button className="icon-btn burger" onClick={() => setOpen(!open)} aria-label="Menu" aria-expanded={open}><span /><span /><span /></button>
-        <Link to="/" className="logo" aria-label="RAGEFORGE home"><img src="/brand/emblem.webp" alt="" /><span>RAGE<em>F</em>ORGE</span></Link>
+        <Link to="/" className="logo" aria-label="RAGEFORGE home"><img src="rageforgelogo.jpeg" alt="" /></Link>
         <nav className={"nav" + (open ? " open" : "")} aria-label="Main">
           <form className="search mobile-only" onSubmit={submit}><input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search supplements" aria-label="Search" /><button className="btn sm">Go</button></form>
-          <NavLink to="/shop" end>All products</NavLink>
-          {catalog.categories.map((c) => (<NavLink key={c.slug} to={`/shop?category=${c.slug}`}>{c.name}</NavLink>))}
+          <NavLink to="/" end>Home</NavLink>
+          <NavLink to="/shop">Shop</NavLink>
+          <NavLink to="/#about">About us</NavLink>
+          <NavLink to="/verify-product">Verify product</NavLink>
+          <NavLink to="/distributor">Become a distributor</NavLink>
+          <a href="#contact">Contact</a>
         </nav>
         <form className="search desk-only" onSubmit={submit} role="search">
           <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search whey, creatine, shaker…" aria-label="Search products" />

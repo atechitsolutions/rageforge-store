@@ -87,11 +87,22 @@ export default function Home() {
       </section>
 
       <section className="wrap sec">
+        <div className="partner-cta">
+          <div>
+            <p className="eyebrow">Grow with RageForge</p>
+            <h2 className="h2">Bring performance nutrition to your community.</h2>
+            <p>Own a store, run a gym, or serve customers online? Apply to become a RageForge distributor.</p>
+          </div>
+          <Link className="btn" to="/distributor">Become a distributor</Link>
+        </div>
+      </section>
+
+      <section className="wrap sec">
         <div className="sec-head"><h2 className="h2">Editor's picks</h2></div>
         <div className="grid">{featured.map((p) => <ProductCard key={p.id} p={p} />)}</div>
       </section>
 
-      <ThreeBg kind="bloom" text="RageForge" className="brand-bloom">
+      <ThreeBg id="about" kind="bloom" text="RageForge" className="brand-bloom">
         <div className="bloom-cap"><h2 className="h2">Forged, not given.</h2><Link className="btn" to="/shop">Explore the range</Link></div>
       </ThreeBg>
     </>

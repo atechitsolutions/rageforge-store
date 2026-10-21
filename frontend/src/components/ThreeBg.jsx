@@ -17,7 +17,7 @@ export function canRun3D() {
 }
 
 // Mounts the effect only while it is on screen, and unmounts it when scrolled away to free the GPU.
-export default function ThreeBg({ kind = "topology", className = "", children, ...props }) {
+export default function ThreeBg({ kind = "topology", className = "", id, children, ...props }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
   const [ok] = useState(canRun3D);
@@ -30,7 +30,7 @@ export default function ThreeBg({ kind = "topology", className = "", children, .
   }, [ok]);
 
   return (
-    <div ref={ref} className={"threebg " + className} aria-hidden="true">
+    <div ref={ref} id={id} className={"threebg " + className} aria-hidden="true">
       <div className="threebg-fallback" />
       {ok && visible && (
         <Suspense fallback={null}>
